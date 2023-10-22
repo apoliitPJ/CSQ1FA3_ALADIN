@@ -1,0 +1,153 @@
+/* style.css */
+
+.container {
+    top: 14%;
+    width: 75px;
+    height: 75vh;
+    position: fixed;
+    background-color: #5e0000;
+    overflow: hidden;
+    border-radius: 30px;
+    bottom: 55px;
+    left: 10px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    margin: 10px;
+    font-size: 20px;
+    
+}
+.title-container {
+    position: absolute;
+    top: 25%;
+    left: 10vh; /* Adjust the left position as needed */
+    transform: translateY(-50%);
+    color: hsl(0, 0%, 0%);
+    text-align: center;
+   
+    
+}
+
+.title {
+    font-size: 10vh;
+    font-weight: bold;
+}
+
+.body-container {
+    position: absolute;
+    top: 35%;
+    left: 10vh; /* Adjust the left position as needed */
+    transform: translateY(50%);
+    color: #fff;
+    text-align: center;
+    font-size: 3vh;
+}
+.icon {
+    width: 60px; 
+    height: 60px; 
+    border-radius: 50%; 
+    overflow: hidden; 
+    position: relative; 
+    transition: transform 0.3s, opacity 0.3s; 
+}
+
+
+/* Define styles for your icons here */
+.icon img {
+    width: 100%; 
+    height: auto;
+}
+.icon:hover {
+    transform: scale(1.1); /* Enlarge the icon on hover */
+    opacity: 0.7; /* Reduce opacity to make other icons fade */
+}
+
+/* Reset the icon size and opacity when not hovered */
+.icon:hover ~ .icon {
+    transform: scale(1); /* Reset the size of other icons */
+    opacity: 1; /* Reset the opacity of other icons */
+}
+.icon:nth-last-child(-n+3)::before {
+    content: "";
+    position: absolute;
+    width: 2px; /* Width of the line */
+    height: 45px; /* Height of the line matching the icon size */
+    background-color: #df2828; /* Color of the line */
+    right: -2px; /* Position the line to the right of the icons */
+    top: 0;
+}
+
+/* Add styles for the top right box */
+.top-right-box {
+    position: absolute;
+    top: 30px;
+    right: -10px;
+    width: 70vh;
+    height: 15vh;
+    background-color: #37c9ce; /* You can change the color */
+    border-radius: 30px;
+    text-align: center;
+    padding: 10px;
+    color: #000000; /* Text color */
+    font-size: 10vh; /* Adjust the font size */
+    z-index: 1; /* Ensure text appears on top of other elements */
+    font-family: cursive;
+    
+}
+body {
+    background-image: url('images/background2.jpg'); /* Replace with the URL of your background image */
+    background-size: cover; /* Ensure the image covers the entire page */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    background-attachment: fixed; /* Fix the image in place, or remove this line if you want it to scroll */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+    .infoabtus-background 
+    {
+        background-image: url('images/bg8.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+   
+
+.centered-div-container {
+    display: flex;
+    justify-content: flex-start; /* Center divs to the left */
+   margin-left: 25%;
+    align-items: left;
+    flex-direction: column;
+    gap: 200px; /* Adjust the gap as needed */
+    margin-top: 70px;
+}
+
+.centered-div {
+    text-align: center; /* Center align the content */
+    max-width: 300px; /* Adjust the maximum width as needed */
+    display: inline-block; /* Make divs inline to position left and right */
+}
+
+.centered-div img {
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+    max-width: 100%; /* Make sure the image doesn't overflow the container */
+}
+
+.centered-div p {
+    margin-top: 10px; /* Spacing between image and text */
+}
